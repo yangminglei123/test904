@@ -24,7 +24,7 @@ public class UserController {
     @RequestMapping(value = "/login.do")
     public  void dologin(String loginAct,String loginPwd, HttpServletRequest request , HttpServletResponse response, HttpSession session) throws IOException {
 
-        System.out.println("进入到验证登录操作.");
+        System.out.println("进入到验证登录操作...");
         String loginPwd1= MD5Util.getMD5(loginPwd); //密码转成密文形式
         String ip = request.getRemoteAddr();//接受浏览器端的ip地址
         System.out.println(ip+"---------------------");
